@@ -1,0 +1,75 @@
+body {
+    overflow: hidden;
+    background-color: black;
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.game {
+    background: url('assets/BG.gif');
+    background-size: cover;
+    border: 3px solid white;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+#gameover {
+    background: rgba(5, 5, 5, 0.8);
+    background-size: cover;
+    z-index: 11;
+    display: none;
+}
+
+#bird {
+    background: url('assets/bird.png');
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+}
+
+.tunnel {
+    background-image: url('assets/tunnel.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 80px;
+    top: 0px;
+    left: 320px;
+    position: absolute;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+.flapText {
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    z-index: 10;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px #313131;
+}
+
+#play {
+    background-image: url('assets/playy.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    top: 400px;
+    left: 160px;
+}
